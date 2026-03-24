@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELIZ CUMPLEAÑOS MI AMOR 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu-container">
+                <a href="#" class="logo">Logo</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="Imagenes/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                    <li><a href="#para-ti">Para ti mi niña 🌷</a></li>
+                    <li><a href="#carta">Desde mi corazón 💕</a></li>
+                    <li><a href="#amo">Lo que amo de ti 😍</a></li>
+                    <li><a href="#galeria">Galería de arte 🎨</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+
+        <div class="header-content-container">
+
+           <div class="para-ti" id="para-ti">
+                <h1>Feliz Cumpleaños <br> mi vida</h1>
+                <p>
+                    Hoy es un dia muy especial mi cielo
+                    hoy 19 años se cumplen desde que nacio una mujer increible, hermosa
+                    y con grandes cosas por lograr, te amo mi amor 
+                    y amo celeberar contigo estos momentos tan especiales
+                </p>
+                <img src="Imagenes/tyler.jpg" class="no-corte" width="400px" weight="500px">
+            </div>
+
+    </header>
+
+
+    <main class="desde-corazon" id="carta">
+
+        <h2>Para ti 🌷</h2>
+        <p>
+            Mi amor esta carta refleja todo lo que siento
+            todo lo que veo en ti.
+        </p>
+
+        <div class="Carta-content">
+            
+            <div class="carta">
+                <h3>Mi cumpleañera hermosa</h3>
+                <p class="carta-texto">
+                    No sabes lo feliz que me hace saber  
+                    que estoy celebrando el cumpleaños  
+                    del amor de mi vida 💕  
+
+                    Es algo increíble estar contigo,  
+                    y te agradezco cada momento  
+                    que pasamos juntos.  
+
+                    Gracias por ser esa niña  
+                    tan maravillosa y especial 🌷  
+
+                    Eres única,  
+                    una personita con grandes sueños  
+                    que quiero cumplir a tu lado 💫  
+
+                    Te adoro con toda mi alma,  
+                    y estar contigo es mi regalo más hermoso 💖  
+                </p>
+            </div>
+
+            <div class="video">
+
+                <video class="Edit" controls >
+                    <source src="Videos/Edit.mp4" type="video/mp4">
+                </video>
+            </div>
+
+         </main>
+
+
+       <main class="lo-que-amo" id="amo">
+            <h4>Mi princesita...</h4>
+            <h5>Amo de ti</h5>
+            <p>Tus ojos 💓</p>
+            <p>Tu Sonrisa 💕 </p>
+            <p>Tus sueños 💤</p>
+            <p>Tu forma de amarme🥰</p>
+            <p>Tus consejos 🐅</p>
+            <p>Tu Mentalidad 🧠</p>
+            <p>Tu Pelito 😻</p>
+            <p>Tu apoyo incondicional 💫</p>
+            <p>Tu hermosura 😍</p>
+        </main>
+
+         <main class="galeria" id="galeria">
+            <img src="Imagenes/Imagen 1.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 2.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 3.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 4.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 5.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 6.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 7.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 8.jpg" class="no-corte">
+            <img src="Imagenes/Imagen 9.jpg" class="no-corte">
+        </main>
+
+    <p class="final">
+        <p>Mi amor, gracias por compartir conmigo ya dos cumpleaños tuyos, te amo con mi alma mi bebe y te agradezco por todo lo que has hecho por mi y espero seguir celebrando este dia tan hermoso. Con amor Tu noviecito hermoso 💕🌷.
+        </p>
+    </main>
+    <div id="lightbox" class="lightbox">
+  <span class="cerrar">&times;</span>
+  <img class="lightbox-img" id="img-grande">
+</div>
+<script>
+const imagenes = document.querySelectorAll('.galeria img');
+const lightbox = document.getElementById('lightbox');
+const imgGrande = document.getElementById('img-grande');
+const cerrar = document.querySelector('.cerrar');
+
+imagenes.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    imgGrande.src = img.src;
+  });
+});
+
+cerrar.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target !== imgGrande) {
+    lightbox.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html> 
